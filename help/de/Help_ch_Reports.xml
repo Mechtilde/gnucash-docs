@@ -159,7 +159,7 @@
        Aktion aus.</para>
        </listitem>
 
-       <listitem><para>Name der Berichtskonfiguration bearbeiten. Damit 
+       <listitem><para>Name der Berichtskonfiguration bearbeiten. Damit
        kann eine Berichtskonfiguration umbenannt werden.</para>
        </listitem>
 
@@ -175,9 +175,9 @@
    <sect1 id="report-config">
       <title>Konfigurieren von Berichten und Diagrammen</title>
 
-        <para>&app; Berichte haben viele Konfigurationsoptionen. Führen Sie 
-        zunächst den Originalbericht selbst aus. Rufen Sie dann die 
-        Berichtsoptionen mit der Schaltfläche <guibutton>Optionen</guibutton> 
+        <para>&app; Berichte haben viele Konfigurationsoptionen. Führen Sie
+        zunächst den Originalbericht selbst aus. Rufen Sie dann die
+        Berichtsoptionen mit der Schaltfläche <guibutton>Optionen</guibutton>
         in der Symbolleiste auf.</para>
 
            <note> <para>Geänderte Grafik-Engine-Optionen prüfen</para></note>
@@ -185,146 +185,189 @@
    <sect2 id="report-opt-btns">
      <title>Schaltflächen für Berichtsoptionen</title>
 
-     <para>After modifying report options, either</para>
+     <para>Nachdem Sie die Berichtsoptionen geändert haben, können Sie
+     entweder
+</para>
 
      <itemizedlist>
        <listitem>
-         <para>Click the <guibutton>OK</guibutton> button to apply the changes,
-           regenerate the report and
-           close the options window.</para>
+         <para>auf die Schaltfläche <guibutton>OK</guibutton> klicken, um die Änderungen zu übernehmen, den Bericht neu zu generieren und das
+         Optionsfenster zu schließen.</para>
 
-         <para>or</para>
+         <para>oder</para>
        </listitem>
 
        <listitem>
-         <para>Click the <guibutton>Apply</guibutton> button to apply the
-           changes, regenerate the report and leave the options window open for
-           possible further changes. In this case, both the <guibutton>Apply
-           </guibutton> and <guibutton>OK</guibutton> buttons will be disabled,
-           indicating changes have been applied, until further changes are made.
+         <para>auf die Schaltfläche <guibutton>Anwenden</guibutton> klicken,
+          um die Änderungen zu übernehmen, den Bericht neu zu generieren
+          und das Optionsfenster für mögliche weitere Änderungen offen zu
+          lassen. In diesem Fall werden sowohl die Schaltflächen
+          <guibutton>Anwenden</guibutton> als auch <guibutton>OK</guibutton>
+          deaktiviert, was anzeigt, dass die Änderungen übernommen wurden,
+          bis weitere Änderungen vorgenommen werden.
+
          </para>
 
-         <para>or</para>
+         <para>oder</para>
        </listitem>
 
        <listitem>
-         <para>Click the <guibutton>Cancel</guibutton> button to close the
-           options window without applying any unapplied changes.</para>
+         <para>auf die Schaltfläche <guibutton>Abbrechen</guibutton> klicken,
+         um das Optionsfenster zu schließen, ohne die noch nicht vorgenommenen
+         Änderungen zu übernehmen.
        </listitem>
      </itemizedlist>
 
    </sect2>
 
    <sect2 id="report-common">
-     <title id="report-common.title">Common Report Options</title>
+     <title id="report-common.title">Allgemeine Berichtsoptionen</title>
 
-        <para>Many reports share similar options. Some common ones include:</para>
+        <para>Viele Berichte haben ähnliche Optionen. Einige häufige sind:</para>
 
         <itemizedlist>
           <listitem>
-            <para>Report Name: Set the title of the report. This is also used to print the
-             report for later viewing.</para>
+            <para>Berichtsname: Legen Sie den Titel des Berichts fest. Dies
+            wird auch verwendet, um den Bericht zur späteren Ansicht zu
+            drucken.</para>
           </listitem>
 
           <listitem>
-            <para>Date Options: Reports typically specify either a single date, or a date
-             range, for the report. Dates can be specified in two ways, either directly
-             (using the date selector), or by selecting a relative date from the menu.
-             Relative dates allow you to specify dates like <guilabel>Beginning of this year</guilabel> or
-             <guilabel>Today</guilabel>.</para>
+            <para>Datumsoptionen: Berichte geben normalerweise entweder
+            ein einzelnes Datum oder einen Datumsbereich für den Bericht
+            an. Datumsangaben können auf zwei Arten angegeben werden,
+            entweder direkt (mit dem Datumsselektor) oder durch Auswahl
+            eines relativen Datums aus dem Menü.Relative Datumsangaben
+            ermöglichen die Angabe von Daten wie <guilabel>Anfang dieses
+            Jahres</guilabel> oder <guilabel>Heute</guilabel>.</para>
 
-            <tip><para>If you often run a report with a date as at the start or end
-             of an accounting period, set the accounting period start and end
-             dates in <menuchoice><guimenu>Edit</guimenu><guisubmenu>
-             Preferences</guisubmenu><guimenuitem>Accounting Period
-             </guimenuitem></menuchoice> then select appropriate report date
-             options. See <xref linkend="prefs-accounting-period" />.</para>
-       </tip>
+            <tip><para>Wenn Sie häufig einen Bericht mit einem Datum am
+            Anfang oder Ende einer Abrechnungsperiode ausführen, stellen
+            Sie das Start- und Enddatum der Abrechnungsperiode in
+            <menuchoice><guimenu>Bearbeiten</guimenu><guisubmenu>Einstellungen
+            </guisubmenu><guimenuitem>Abrechnungsperiode </guimenuitem>
+            </menuchoice> ein und wählen Sie dann die entsprechenden
+            Optionen für das Berichtsdatum. Siehe <xref linkend="prefs-accounting-period" />.</para>
+            </tip>
 
           </listitem>
 
           <listitem>
-            <para>Step Size: This option is used on bar charts to determine the interval which
-             each bar represents. Typical values are daily, weekly, monthly, and yearly.</para>
+            <para>Schrittweite: Diese Option wird bei Balkendiagrammen
+            verwendet, um das Intervall zu bestimmen, das jeder Balken
+            darstellt. Typische Werte sind täglich, wöchentlich, monatlich
+            und jährlich.</para>
           </listitem>
 
           <listitem>
-            <para>Accounts: Select the appropriate accounts for the report. Note that in some
-             reports only certain types of accounts can be selected. For example, an expense
-             piechart only allows expense accounts to be selected. </para>
+            <para>Konten: Wählen Sie die entsprechenden Konten für den
+            Bericht aus. Beachten Sie, dass in einigen Berichten nur
+            bestimmte Arten von Konten ausgewählt werden können. So
+            können z. B. in einem Ausgabenkuchendiagramm nur
+            Aufwandskonten ausgewählt werden. </para>
           </listitem>
 
           <listitem>
-            <para>Show Long Account Names: This option allows displaying either short account
-             names (for example, Power) or long account names (for example, Utilities:Power).
+            <para>Lange Kontennamen anzeigen: Mit dieser Option können
+            entweder kurze Kontennamen (z. B. Strom) oder lange
+            Kontennamen (z. B. Nebenkosten:Strom) angezeigt werden.
             </para>
           </listitem>
 
           <listitem>
-            <para>Include Subaccounts?: Summary reports typically have an include all
-             subaccounts option, which if selected ensures that all subaccounts are included
-             if the parent account is.</para>
+            <para>Unterkonten einschließen?: Zusammenfassungsberichte haben
+            in der Regel eine Option "Alle Unterkonten einschließen", die,
+            wenn sie ausgewählt ist, sicherstellt, dass alle Unterkonten eingeschlossen werden, wenn das übergeordnete Konto eingeschlossen
+            ist.</para>
           </listitem>
 
           <listitem>
-            <para>Depth: This option allows the selection of how many levels the report
-             displays subaccounts. If the subaccounts go deeper than selected, an overall value
-             for all the subaccounts is calculated and included in a total. To make sure every
-             account selected is individually displayed, select <guibutton>All</guibutton>.</para>
+            <para>Tiefe: Mit dieser Option können Sie auswählen, wie viele
+            Ebenen der Bericht Unterkonten anzeigt. Wenn die Unterkonten
+            tiefer gehen als ausgewählt, wird ein Gesamtwert für alle
+            Unterkonten berechnet und in eine Summe einbezogen. Um
+            sicherzustellen, dass jedes ausgewählte Konto einzeln angezeigt
+            wird, wählen Sie <guibutton>Alle</guibutton>.</para>
+          </listitem>
+<!-- Please adapt the English part -->
+          <listitem>
+            <para>Formatvorlage: Wählen Sie eine Stilvorlage aus. Stilvorlagen steuern, wie Berichte angezeigt werden. Zurzeit gibt es vier
+            Stilvorlagen: <guilabel>Voreinstellung</guilabel>,
+            <guilabel>Einfach</guilabel>, <guilabel>Fußzeile</guilabel> und
+            <guilabel>Bunt</guilabel>. Sie können jedes dieser Elemente über
+            den Menüpunkt <menuchoice><guimenu>Bearbeiten</guimenu><guimenuitem>
+            Stilvorlagen</guimenuitem></menuchoice> anpassen. Dies wird im
+            Abschnitt <xref linkend="change-style"></xref><!--Ändern von
+            Stilvorlagen--> beschrieben.</para>
           </listitem>
 
           <listitem>
-            <para>Style Sheet: Select a Style Sheet. Style sheets control how reports are
-             displayed. At the moment, there are four style sheets: <guilabel>Default</guilabel>, <guilabel>Easy</guilabel>,
-             <guilabel>Footer</guilabel> and <guilabel>Technicolor</guilabel>.
-             You can customize each of these from the <menuchoice><guimenu>Edit</guimenu><guimenuitem>Style
-             Sheets...</guimenuitem></menuchoice> menu item.
-             This is described in the <xref linkend="change-style"></xref><!--Changing Style Sheets--> section.</para>
+            <para>Diagrammabmessungen: Für die meisten Diagramme gibt es
+            Optionen für Breite und Höhe, die die angezeigten Abmessungen
+            (in Pixel) angeben).</para>
           </listitem>
 
           <listitem>
-            <para>Plot Dimensions: There are width and height options for most charts, which
-             specify the displayed dimensions (in pixels).</para>
-          </listitem>
+            <para>Berichtswährung: Wählen Sie die Berichtswährung. In der
+            Regel werden die Werte zur Anzeige in diese Währung
+            umgerechnet.</para>
 
-          <listitem>
-            <para>Report Currency: Select the report currency. Generally, values will be
-             converted to this currency for display.</para>
-
-            <para>The default Report Currency is defined in <menuchoice>
-              <guimenu>Edit</guimenu><guimenuitem>Preferences</guimenuitem>
-              </menuchoice> Reports tab. See <xref linkend="prefs-reports" />.
+            <para>Die Standardberichtswährung wird in der Registerkarte
+            <menuchoice> <guimenu>Bearbeiten</guimenu><guimenuitem>Einstellungen
+            </guimenuitem></menuchoice> Berichte definiert.
+            Siehe <xref linkend="prefs-reports" />.
             </para>
           </listitem>
 
           <listitem>
-            <para>Price Source: Select how stock and currency prices are calculated in this report. Choose between:
+            <para>Preisquelle: Wählen Sie aus, wie Aktien- und Währungspreise
+            in diesem Bericht berechnet werden. Wählen Sie zwischen:
             <itemizedlist>
-              <listitem><para>Nearest in time (default for most reports): A price retrieved from the prices database on the date nearest to the date of the report or of the datum for time-series reports.</para></listitem>
-              <listitem><para>Most recent: The latest price in the price database.</para></listitem>
-              <listitem><para>Average Cost: The amount-weighted <emphasis>net</emphasis> average of <emphasis>all</emphasis> splits exchanging the commodity for another <emphasis>regardless of account</emphasis>. Gain/loss splits are <emphasis>included</emphasis> in the calculation.</para></listitem>
-              <listitem><para>Weighted Average: The <emphasis>gross</emphasis> amount-weighted average price of <emphasis>all</emphasis> splits exchanging the commodity for another <emphasis>regardless of account</emphasis>. Gain/Loss splits are <emphasis>not</emphasis> in the calculation.</para></listitem>
+              <listitem><para>Zeitlich nächstgelegen (Standard für die
+              meisten Berichte): Ein Preis, der aus der Preisdatenbank
+              an dem Datum abgerufen wurde, das dem Datum des Berichts
+              oder des Datums für Zeitreihenberichte am nächsten liegt.</para></listitem>
+              <listitem><para>Aktuellste: Der letzte Preis in der
+              Preisdatenbank.</para></listitem>
+              <listitem><para>Durchschnittskosten: Der betragsgewichtete
+              <emphasis>Netto</emphasis>-Durchschnitt von
+              <emphasis>allen</emphasis> Teilen, die die Wertpapiere
+              gegen eine andere <emphasis>unabhängig vom Konto</emphasis>
+              austauschen. Gewinn/Verlust-Aufteilungen werden <emphasis>in
+              die Berechnung mit einbezogen</emphasis>.</para></listitem>
+              <listitem><para>Gewichteter Durchschnitt: Der <emphasis>brutto
+              </emphasis> betragsgewichtete Durchschnittspreis von
+              <emphasis>allen</emphasis> Aufteilungen, die die Wertpapiere
+              Gewinn-/Verlust-Aufspaltungen werden <emphasis>nicht</emphasis>
+              in die Berechnung einbezogen.</para></listitem>
             </itemizedlist>
-            More information on Average Cost and Weighted Average may be found in the Investments chapter of The Tutorial and Concepts Guide.</para>
+            Weitere Informationen zu Durchschnittskosten und gewichtetem
+            Durchschnitt finden Sie im Kapitel "Kapitalanlagen" des Handbuchs
+            "Kurs und Konzepte".</para>
           </listitem>
 
           <listitem>
-            <para>Totals: Charts display totals in the chart legend if this option is selected.
+            <para>Summen: Diagramme zeigen Summen in der Diagrammlegende
+            an, wenn diese Option ausgewählt ist.
             </para>
           </listitem>
 
           <listitem>
-            <para>Maximum Slices: Controls the maximum number of slices displayed in a
-             piechart - other accounts will be placed in a slice marked Other. </para>
-          </listitem>
-
-          <listitem>
-            <para>Maximum Bars: Controls the maximum number of bars displayed in a barchart.
+            <para>Maximale Scheiben: Steuert die maximale Anzahl von Scheiben,
+            die in einem Kreisdiagramm angezeigt werden - andere Konten
+            werden in einer Scheibe mit der Bezeichnung Andere platziert.
             </para>
           </listitem>
 
           <listitem>
-            <para>Display Columns: Choose columns to show from the register.</para>
+            <para>Maximale Balken: Steuert die maximale Anzahl von Balken,
+            die in einem Balkendiagramm angezeigt werden.
+            </para>
+          </listitem>
+
+          <listitem>
+            <para>Spalten anzeigen: Wählen Sie die anzuzeigenden Spalten
+            aus dem Register.</para>
           </listitem>
         </itemizedlist>
 
@@ -333,73 +376,121 @@
   </sect1>
 
   <sect1 id="report-classes">
-   <title>Reports Listed By Class</title>
+   <title>Berichte nach Klasse aufgelistet</title>
 
-   <para>&app; has classified the main types of
-     reports into major classes. These
-      are all available under the Reports menu.</para>
+   <para>&app; hat die Haupttypen von Berichte in Hauptklassen eingeteilt.
+   Diese sind alle unter dem Menü Berichte verfügbar.</para>
 
      <sect2 id="report-general">
-      <title>General Reports</title>
+      <title>Allgemeine Berichte</title>
 
-      <para>The General Reports include the Account Summary Report, the Future
-        Scheduled Transactions Summary, the Tax Schedule Report and <acronym>
-        TXF</acronym> Export, and the Transaction Report and also the reports in the Sample &amp; Custom menu.</para>
+      <para>Zu den allgemeinen Berichten gehören der Kontenübersichtsbericht,
+      die Zusammenfassung zukünftiger geplanter Buchungen, der
+      Steuerbericht und <acronym> Elster</acronym>-Export sowie der
+      Buchungsbericht und auch die Berichte im Menü Muster &amp; Beispiel;
+       Benutzerdefiniert.</para>
 
       <sect3>
-        <title>Account Summary</title>
+        <title>Kontenübersicht</title>
         <para> </para>
       </sect3>
 
       <sect3>
-        <title>Future Scheduled Transactions Summary</title>
+        <title>Zusammenfassung zukünftiger geplanter Buchungen</title>
         <para> </para>
       </sect3>
 
       <sect3 id="report-taxreport">
-        <title>Tax Schedule Report and <acronym>TXF</acronym> Export</title>
-        <para>The tax schedule report lists all taxable income and deductible expense amounts used in the preparation of US Income Tax returns. The purpose of the report is to provide a complete audit trail for these amounts. The report is intended to be used by a tax payer to manually prepare his or her own tax return, or alternatively, to be provided to a tax preparer for that purpose. The report can also be used to generate an export of all tax related income and expenses to a <acronym>TXF</acronym> (Tax eXchange Format) file (this is in addition to exporting to the <acronym>HTML</acronym> format that all reports allow). The <acronym>TXF</acronym> file can be imported into tax filing programs such as TaxCut or TurboTax. The report should be run, inspected carefully for errors or omissions, and then corrections made to transactions, report settings, currency conversion rates or the account structure as needed. This process should be repeated as often as needed until all the amounts on the report are correct before a final version is used and saved along with the tax returns.</para>
+        <title>Steuer-Bericht und <acronym>Elster</acronym>-Export</title>
+        <para>Der Steuer-Bericht listet alle steuerpflichtigen Einnahmen
+        und abzugsfähigen Ausgabenbeträge auf, die bei der Erstellung der
+         Einkommensteuererklärungen verwendet werden. Der Zweck des
+         Berichts ist es, einen vollständigen Prüfpfad für diese Beträge
+         bereitzustellen. Der Bericht soll von einem Steuerzahler verwendet
+          werden, um seine eigene Steuererklärung manuell zu erstellen,
+          oder er soll alternativ einem Steuerberater für diesen Zweck
+          zur Verfügung gestellt werden. Der Bericht kann auch verwendet
+          werden, um einen Export aller steuerlich relevanten Einnahmen
+          und Ausgaben in eine <acronym>Elster</acronym>-Datei zu erzeugen
+          (dies ist zusätzlich zum Export in das <acronym>HTML</acronym>-Format,
+          das alle Berichte erlauben). Diese <acronym>Elster</acronym>-Datei
+          kann in Steuererklärungsprogramme wie TaxCut oder TurboTax o.ä.
+          importiert werden. Der Bericht sollte ausgeführt, sorgfältig
+          auf Fehler oder Auslassungen geprüft und dann bei Bedarf Korrekturen
+          an Buchungen, Berichtseinstellungen, Währungsumrechnungskursen
+          oder der Kontenstruktur vorgenommen werden. Dieser Vorgang sollte
+          so oft wie nötig wiederholt werden, bis alle Beträge im Bericht
+          korrekt sind, bevor eine endgültige Version verwendet und
+          zusammen mit den Steuererklärungen gespeichert wird.</para>
 
-          <para> For accounts specified in the report options (none = all) that are also flagged as <guilabel>Tax-related</guilabel>, all transactions for the time period selected (also in the report options) are included. The report sorts transactions by date within account providing subtotals by account within tax code within Form or Schedule line number. Support is also provided for multiple copies of and for sub-line items for selected Forms/Schedules. Optionally uses special date processing to include federal estimated tax payments after year end.</para>
+          <para> Für Konten, die in den Berichtsoptionen angegeben sind
+          (keine = alle) und die auch als <guilabel>Steuerbezogen</guilabel>
+          gekennzeichnet sind, werden alle Buchungen für den gewählten
+          Zeitraum (ebenfalls in den Berichtsoptionen) einbezogen. Der
+          Bericht sortiert Buchungen nach Datum innerhalb des Kontos
+          und liefert Zwischensummen nach Konto innerhalb des
+          Steuerkennzeichens innerhalb der Formular- oder
+          Einteilungszeilennummer. Es werden auch Mehrfachkopien und
+          Unterzeilen für ausgewählte Formulare/Schemata unterstützt.
+           optional eine spezielle Datumsverarbeitung, um geschätzte
+           Steuerzahlungen nach Jahresende einzubeziehen..</para>
 
-          <para>All totals are in USD since this is the currency required for filing US Income Tax returns. Non-USD transaction amounts are converted to USD using the transaction conversion rate to USD, if available. If not, a conversion rate from the price database is used (either the date nearest the transaction date or nearest the report date as specified in the report options; if none is available, transaction amounts are converted to zero and the report provides a comment accordingly). A complete audit trail of conversions is provided.</para>
+          <para>Alle Summen sind in EUR angegeben, da dies die Währung
+          ist, die für die Abgabe der Einkommenssteuererklärung erforderlich
+          ist. Buchungsbeträge, die nicht in EUR sind, werden in EUR
+          umgerechnet, indem der Umrechnungskurs für Buchungen in EUR
+          verwendet wird, falls verfügbar. Ist dies nicht der Fall,
+          wird ein Umrechnungskurs aus der Preisdatenbank verwendet
+          (entweder das Datum, das dem Transaktionsdatum am nächsten
+          liegt, oder das Datum, das dem Berichtsdatum am nächsten
+          liegt, wie in den Berichtsoptionen angegeben; ist keines
+          verfügbar, werden die Buchungsbeträge) auf Null umgerechnet
+          und der Bericht enthält einen entsprechenden Kommentar. Es wird
+          ein vollständiger Prüfpfad der Umrechnungen bereitgestellt.</para>
 
-          <note><para>For this to work, the user has to segregate taxable and non taxable
-           income to different accounts, as well as deductible and non deductible expenses.
-           The Income Tax Information dialog is used for this. To access the Income Tax
-           Information dialog go to <menuchoice><guimenu>Edit</guimenu><guimenuitem>Tax Report Options</guimenuitem></menuchoice>. The user
-           also must set the <acronym>TXF</acronym> category of each tax related account. The Income Tax
-           Information dialog is described in the <xref linkend="set-tax-options"></xref> section.</para></note>
+          <note><para>Damit dies funktioniert, muss der Benutzer
+          steuerpflichtige und nicht steuerpflichtige Einkommen auf
+          verschiedene Konten sowie abzugsfähige und nicht abzugsfähige
+          Ausgaben aufteilen. Dazu wird der Dialog Einkommensteuerinformationen
+          verwendet. Zum Dialog Einkommenssteuerinformationen gelangen
+          Sie über <menuchoice><guimenu>Bearbeiten</guimenu><guimenuitem>
+          Optionen Steuerbericht</guimenuitem></menuchoice>. Der Benutzer
+          muss auch die <acronym>Elster</acronym>-Kategorie jedes
+          steuerbezogenen Kontos einstellen. Der Dialog
+          Einkommensteuerinformationsdialog wird im Abschnitt
+          <xref linkend="set-tax-options"></xref> beschrieben.</para></note>
 
       </sect3>
 
       <sect3>
-        <title>Transaction Report</title>
+        <title>Buchungsreport</title>
 
-        <para>This report lists transactions in selected accounts during a specified financial period. Two fields may be optionally
-          used for sorting and totalling.
+        <para>Dieser Bericht listet Buchungen in ausgewählten Konten
+        während einer bestimmten Finanzperiode auf. Zwei Felder können
+        optional zum Sortieren und Summieren verwendet werden.
         </para>
 
         <sect4 id="report-txrpt-opts">
-          <title>Report Options</title>
+          <title>Berichtsoptionen</title>
 
            <figure>
-             <title><emphasis>Transaction Report, Report Options</emphasis></title>
+             <title><emphasis>Buchungsbericht, Berichtsoptionen</emphasis></title>
              <screenshot id="Help_TxRptOpt_Screen">
                <mediaobject>
                  <imageobject role="html">
                    <imagedata fileref="figures/Help_TxRptOpt_Screen.png" format="PNG"
-                     srccredit="Geert Janssens" width="510px"></imagedata>
+                     srccredit="Mechtilde Stehmann" width="510px"></imagedata>
                  </imageobject>
 
                  <imageobject role="fo">
                    <imagedata fileref="figures/Help_TxRptOpt_Screen.png" format="PNG"
-                     srccredit="Geert Janssens" ></imagedata>
+                     srccredit="Mechtilde Stehmann" ></imagedata>
                  </imageobject>
 
-                 <textobject><phrase>Transaction Report, Report Options screen</phrase>
+                 <textobject><phrase>Buchungsbericht, Berichtsoptionen (Bild)</phrase>
                  </textobject>
-                   <caption><para>This is an image of the <emphasis>Transaction Report, Report Options, Display tab.</emphasis></para>
+                   <caption><para>Dies ist ein Bild des <emphasis>Buchungsberichts,
+                   Berichtsoptionen, Registerkarte Anzeige.</emphasis></para>
                  </caption>
                </mediaobject>
              </screenshot>
@@ -1757,11 +1848,14 @@ make doc
   </sect2>
 
   <sect2 id="report-render">
-    <title>Report Rendering</title>
-    <para>At present, reports are produced by calling a <acronym>HTML</acronym>-generation API, which outputs
-      a dialect of <acronym>HTML</acronym> and rendering this with a <acronym>HTML</acronym> widget. This has limitations,
-      particularly when trying to align objects precisely, as might be necessary for
-      printing onto pre-printed invoices for example.</para>
+    <title>Berichtsdarstellung</title>
+    <para>Derzeit werden Berichte durch den Aufruf einer
+    <acronym>HTML</acronym>-Generierungs-API erzeugt, die einen Dialekt
+    von <acronym>HTML</acronym> ausgibt und diesen mit einem
+    <acronym>HTML</acronym>-Widget darstellt. Dies hat Einschränkungen,
+    insbesondere wenn man versucht, Objekte präzise auszurichten, wie
+    es z. B. für den Druck auf vorgedruckte Rechnungen notwendig sein
+    könnte.</para>
     </sect2>
   </sect1>
 
